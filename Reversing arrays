@@ -1,0 +1,48 @@
+//PRIYANSHA GOUR
+//24070123079
+//ENTC-A3
+#include <iostream>
+using namespace std;
+int main() {
+    int arr[50], num, temp, i, j;
+    cout<<"enter size: ";
+    cin>>num;
+    
+    for(i=0; i<num; i++){
+    
+        cout<<"enter element"<<i+1<<endl;
+        cin>>arr[i];
+    }
+    
+    
+    for (i=0, j=num-1; i<num/2; i++, j--){
+        temp=arr[i];
+        arr[i]=arr[j];
+        arr[j]=temp;
+    }
+    cout<<"Reversed array: "<<endl;
+    for(int i=0;i<num;i++){
+        cout<<arr[i]<<endl;
+    }
+    
+    return 0;
+}
+
+/* OUTPUT:
+enter size: 4
+enter element1
+1
+enter element2
+
+3
+enter element3
+4
+enter element4
+5
+Reversed array: 
+5
+4
+3
+1
+
+*/
