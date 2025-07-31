@@ -1,1 +1,1 @@
-# Arrays-in-Cpp
+# Arrays and strings in-Cpp
